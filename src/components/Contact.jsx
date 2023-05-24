@@ -7,6 +7,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { github, linkedin } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -27,6 +28,11 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (form.name === "" || form.email === "" || form.message === "") {
+      return;
+    }
+
     setLoading(true);
 
     email
@@ -110,12 +116,45 @@ const Contact = () => {
             />
           </label>
 
-          <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
+          <div className="flex flex-row xs:mt-10 flex-wrap items-center justify-between">
+            <button
+              type="submit"
+              className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            >
+              {loading ? "Sending..." : "Send"}
+            </button>
+
+            <div className="flex flex-row gap-10">
+              <div
+                onClick={() =>
+                  window.open("https://github.com/helfo2", "_blank")
+                }
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={github}
+                  alt="github"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+
+              <div
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/henrique-ferreira-606aab113/",
+                    "_blank"
+                  )
+                }
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={linkedin}
+                  alt="linkedin"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+            </div>
+          </div>
         </form>
       </motion.div>
 
