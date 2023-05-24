@@ -18,8 +18,9 @@ const Hero = () => {
             Hi, I&apos;m <span className="text-[#915eff]">Henrique</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I build algorithms <br className="sm:block hidden" /> that bring
-            business value.
+            I build reliable, scalable,
+            <br className="sm:block hidden" />
+            and maintainable distributed systems.
           </p>
         </div>
       </div>

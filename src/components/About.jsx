@@ -44,8 +44,14 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I&apos;m a skilled software developer with an experience in lots of
-        stuff.
+        I&apos;m a software engineer with experience in C#, Python, Javascript,
+        and many others. I&apos;ve worked with AI/ML; Android, React, and WPF
+        Desktop applications; On-premise and containerized AWS cloud services.
+        Fast learner, I&apos;ve used many tools through this journey from Docker
+        to Jupyter Notebooks, PHP and database engines: to me it&apos;s all
+        about algorithms and data structures in the end. I&apos;m a strong team
+        player and a technical (academical) decision-maker, having led some
+        projects and designed some system architectures so far.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
