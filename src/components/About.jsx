@@ -44,14 +44,19 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I&apos;m a software engineer with experience in C#, Python, Javascript,
-        and many others. I&apos;ve worked with AI/ML; Android, React, and WPF
-        Desktop applications; On-premise and containerized AWS cloud services.
-        Fast learner, I&apos;ve used many tools through this journey from Docker
-        to Jupyter Notebooks, PHP and database engines: to me it&apos;s all
-        about algorithms and data structures in the end. I&apos;m a strong team
-        player and a technical (academical) decision-maker, having led some
-        projects and designed some system architectures so far.
+        I&apos;m a <b>software engineer</b> with experience in <b>C#</b>,{" "}
+        <b>Python</b>,<b>Javascript</b>, and other languages. I&apos;ve worked
+        with <b>on-premise</b> and <b>containerized AWS cloud services</b>, as
+        well as <b>AI/ML</b>, <b>Android</b>, <b>React</b>, and{" "}
+        <b>WPF Desktop applications</b>.<br />
+        <br /> I&apos;m a fast learner and have used many tools through this
+        journey from <b>Docker</b> to <b>Jupyter Notebooks</b>,{" "}
+        <b>Kubernetes</b> and <b>relational/document database engines</b>: to me
+        it&apos;s all about algorithms and data structures in the end. <br />
+        <br />
+        I&apos;m a strong team player and a technical (academical)
+        decision-maker, having led some projects and designed some system
+        architectures so far.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
